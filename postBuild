@@ -1,1 +1,2 @@
 julia -e "Pkg.clone(\"https://github.com/djsegal/Abacus.jl\")"
+julia -e "Pkg.build(\"WebIO\")"

@@ -6,6 +6,7 @@ ENV NB_USER jovyan
 ENV NB_UID 1000
 ENV HOME /home/${NB_USER}
 
+USER root
 RUN adduser --disabled-password \
     --gecos "Default user" \
     --uid ${NB_UID} \
@@ -13,7 +14,6 @@ RUN adduser --disabled-password \
 
 # Make sure the contents of our repo are in ${HOME}
 COPY . ${HOME}
-USER root
 RUN chown -R ${NB_UID} ${HOME}
 RUN npm cache clean -f
 RUN npm install -g n

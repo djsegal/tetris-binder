@@ -1,4 +1,5 @@
 echo 1234
+which node
 node -v
 echo 44441234
 npm -v

@@ -1,11 +1,10 @@
 echo 1234
-conda install npm
-echo 12341234
-npm cache clean -f
-echo 12345555
-npm install -g n
+node -v
+echo 44441234
+npm -v
 echo 12347777
 n stable
+echo 4040404
 julia -e "Pkg.clone(\"https://github.com/djsegal/WebIO.jl.git\")"
 echo 456
 cd /srv/julia/pkg/v0.6/WebIO/assets/

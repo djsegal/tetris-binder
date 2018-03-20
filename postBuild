@@ -3,8 +3,6 @@ which node
 node -v
 echo 44441234
 npm -v
-echo 12347777
-n stable
 echo 4040404
 julia -e "Pkg.clone(\"https://github.com/djsegal/WebIO.jl.git\")"
 echo 456
@@ -17,6 +15,7 @@ echo 999
 cd -
 echo 654
 julia -e "Pkg.build(\"WebIO\")"
+julia -e "using WebIO;WebIO.devsetup();WebIO.bundlejs()"
 echo 4321
 node --version
 echo 44444444

@@ -1,13 +1,6 @@
-echo 4040404
 julia -e "Pkg.clone(\"https://github.com/djsegal/WebIO.jl.git\")"
-echo 456
 cd /srv/julia/pkg/v0.6/WebIO/assets/
-echo 888
 jupyter labextension install webio
-echo 98989
 jupyter labextension enable webio/jupyterlab_entry
-echo 999
 cd -
-echo 654
 julia -e "Pkg.build(\"WebIO\")"
-echo 55555555

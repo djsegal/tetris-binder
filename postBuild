@@ -1,4 +1,4 @@
-julia -e "Pkg.clone(\"https://github.com/djsegal/Tetris.jl.git\")"
+julia -e "Pkg.clone(\"https://github.com/djsegal/Abacus.jl.git\")"
 julia -e "Pkg.clone(\"https://github.com/djsegal/WebIO.jl.git\")"
 cd /srv/julia/pkg/v0.6/WebIO/assets/
 jupyter labextension install webio

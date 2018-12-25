@@ -1,5 +1,5 @@
 julia -e "Pkg.checkout(\"Tetris\")"
-julia -e "Pkg.pin(\"WebIO\", v\"0.2.5\")"
+julia -e "Pkg.pin(\"WebIO\", v\"0.2.8\")"
 cd /srv/julia/pkg/v0.6/WebIO/assets/
 jupyter labextension install webio
 jupyter labextension enable webio/jupyterlab_entry
